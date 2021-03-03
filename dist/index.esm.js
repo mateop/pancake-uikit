@@ -2073,11 +2073,11 @@ var Logo$1 = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$N, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$M, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "MilkSwap home page" },
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Milkswap Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true", alt: "Milkswap Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink$1, { to: href, "aria-label": "MilkSwap home page" },
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "Milkswap Logo", className: "mobile-icon" }),
-            React.createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true", alt: "Milkswap Logo", className: "desktop-icon" })))));
+        isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "MozartSwap home page" },
+            React.createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "MozartSwap Logo", className: "mobile-icon" }),
+            React.createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink$1, { to: href, "aria-label": "MilkSwap home page" },
+            React.createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "MozartSwap Logo", className: "mobile-icon" }),
+            React.createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$y;
 
@@ -2749,7 +2749,7 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#002365", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeeee", tertiary: "#EFF4F5", text: "#5f7888", textDisabled: "#BDC2C4", textSubtle: "#5EC3DA", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#002365", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeeee", tertiary: "#EFF4F5", text: "#5f7888", textDisabled: "#BDC2C4", textSubtle: "#002365", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#100C18", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#A28BD4", borderColor: "#524B63", card: "#27262c", gradients: {

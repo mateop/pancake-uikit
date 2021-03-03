@@ -43,28 +43,28 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="MilkSwap home page">
+        <StyledLink as="a" href={href} aria-label="MozartSwap home page">
           <img
-            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
-            alt="Milkswap Logo"
+            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
+            alt="MozartSwap Logo"
             className="mobile-icon"
           />
           <img
-            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true"
-            alt="Milkswap Logo"
+            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true"
+            alt="MozartSwap Logo"
             className="desktop-icon"
           />
         </StyledLink>
       ) : (
         <StyledLink to={href} aria-label="MilkSwap home page">
           <img
-            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
-            alt="Milkswap Logo"
+            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true"
+            alt="MozartSwap Logo"
             className="mobile-icon"
           />
           <img
-            src="https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true"
-            alt="Milkswap Logo"
+            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/milkswap_logo.svg?raw=true"
+            alt="MozartSwap Logo"
             className="desktop-icon"
           />
         </StyledLink>
