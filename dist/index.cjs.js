@@ -2206,15 +2206,15 @@ var socials = [
         icon: "TelegramIcon",
         items: [
             {
-                label: "English",
-                href: "https://t.me/milkswap_bsc",
+                label: "Telegram",
+                href: "http://t.me/MozartFinance",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/milkswap_bsc",
+        href: "https://twitter.com/MozartFinance",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2234,8 +2234,8 @@ var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateOb
     var secondary = _a.secondary;
     return (secondary ? "14px" : "16px");
 }, function (_a) {
-    var secondary = _a.secondary, theme = _a.theme;
-    return (secondary ? theme.colors.background : "transparent");
+    var secondary = _a.secondary; _a.theme;
+    return (secondary ? '#fffdf4' : "transparent");
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
@@ -2340,7 +2340,7 @@ var PanelFooter = function (_a) {
     return (React__default['default'].createElement(Container$4, null,
         React__default['default'].createElement(SocialEntry, null,
             cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
-                React__default['default'].createElement("img", { src: "https://github.com/MilkSwap/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true", alt: "Milkswap Logo", style: {
+                React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.png?raw=true", alt: "Mozartswap Logo", style: {
                         width: "24px",
                         marginRight: "8px",
                     } }),
