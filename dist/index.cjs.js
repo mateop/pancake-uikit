@@ -885,9 +885,12 @@ var style = (_a = {},
         fontSizeLg: "64px",
     },
     _a);
-var Heading = styled__default['default'](Text).attrs({ bold: true })(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 800;\n  line-height: 1.1;\n  color: #fed700;\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 800;\n  line-height: 1.1;\n  color: #fed700;\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
+var Heading = styled__default['default'](Text).attrs({ bold: true })(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 800;\n  line-height: 1.1;\n  color: ", ";\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 800;\n  line-height: 1.1;\n  color: ", ";\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
     var size = _a.size;
     return style[size || sizes$1.MD].fontSize;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.primary;
 }, function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.lg;
@@ -2082,15 +2085,15 @@ var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObjec
     return theme.mediaQueries.nav;
 });
 var Logo$1 = function (_a) {
-    var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
+    var isPushed = _a.isPushed, togglePush = _a.togglePush, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$N, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$M, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "MozartSwap home page" },
             React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "MozartSwap Logo", className: "mobile-icon" }),
-            React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" }))) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "MozartSwap home page" },
+            React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.jpg?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" }))) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "MozartSwap home page" },
             React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "MozartSwap Logo", className: "mobile-icon" }),
-            React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" })))));
+            React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.jpg?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$y;
 
@@ -2227,7 +2230,7 @@ var LinkLabel = styled__default['default'].div(templateObject_2$a || (templateOb
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.textSubtle : "transparent");
 });
-var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  font-weight: 600;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"], ["\n  font-weight: 600;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  font-weight: 600;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: #eeeeee;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"], ["\n  font-weight: 600;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: #eeeeee;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 32px" : "0 16px");
 }, function (_a) {
@@ -2235,7 +2238,7 @@ var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateOb
     return (secondary ? "14px" : "16px");
 }, function (_a) {
     var secondary = _a.secondary; _a.theme;
-    return (secondary ? '#fffdf4' : "transparent");
+    return (secondary ? '#f5f5f5' : "transparent");
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
@@ -2245,9 +2248,6 @@ var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateOb
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.tertiary;
 }, rainbowAnimation, function (_a) {
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;
@@ -2752,17 +2752,17 @@ var templateObject_1$J;
 
 var baseColors = {
     failure: "#ff738e",
-    primary: "#fed700",
+    primary: "#a7a9ac",
     primaryBright: "#fed700",
     primaryDark: "#5DC4D9",
-    secondary: "#5DC4D9",
+    secondary: "#751113",
     success: "#33CA7F",
     warning: "#fea192",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#002365", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeeee", tertiary: "#EFF4F5", text: "#383f4a", textDisabled: "#BDC2C4", textSubtle: "#296287", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#eee", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeeee", tertiary: "#751113", text: "#751113", textDisabled: "#BDC2C4", textSubtle: "#751113", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#100C18", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#A28BD4", borderColor: "#524B63", card: "#27262c", gradients: {

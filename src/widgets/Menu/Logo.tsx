@@ -30,7 +30,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
+const Logo: React.FC<Props> = ({ isPushed, togglePush, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
 
   return (
@@ -50,7 +50,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
             className="mobile-icon"
           />
           <img
-            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true"
+            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.jpg?raw=true"
             alt="MozartSwap Logo"
             className="desktop-icon"
           />
@@ -63,7 +63,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
             className="mobile-icon"
           />
           <img
-            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true"
+            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.jpg?raw=true"
             alt="MozartSwap Logo"
             className="desktop-icon"
           />
