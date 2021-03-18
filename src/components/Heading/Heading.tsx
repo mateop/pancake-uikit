@@ -17,7 +17,7 @@ const style = {
   },
   [sizes.XXL]: {
     fontSize: "48px",
-    fontSizeLg: "64px",
+    fontSizeLg: "80px",
   },
 };
 

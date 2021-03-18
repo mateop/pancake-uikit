@@ -50,7 +50,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, href }) => {
             className="mobile-icon"
           />
           <img
-            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.jpg?raw=true"
+            src="https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true"
             alt="MozartSwap Logo"
             className="desktop-icon"
           />

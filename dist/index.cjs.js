@@ -882,7 +882,7 @@ var style = (_a = {},
     },
     _a[sizes$1.XXL] = {
         fontSize: "48px",
-        fontSizeLg: "64px",
+        fontSizeLg: "80px",
     },
     _a);
 var Heading = styled__default['default'](Text).attrs({ bold: true })(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 800;\n  line-height: 1.1;\n  color: ", ";\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 800;\n  line-height: 1.1;\n  color: ", ";\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
@@ -2091,7 +2091,7 @@ var Logo$1 = function (_a) {
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$N, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$M, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "MozartSwap home page" },
             React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "MozartSwap Logo", className: "mobile-icon" }),
-            React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.jpg?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" }))) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "MozartSwap home page" },
+            React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.png?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" }))) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "MozartSwap home page" },
             React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logo.svg?raw=true", alt: "MozartSwap Logo", className: "mobile-icon" }),
             React__default['default'].createElement("img", { src: "https://github.com/mateop/pancake-uikit/blob/master/src/widgets/Menu/logoWithText.jpg?raw=true", alt: "MozartSwap Logo", className: "desktop-icon" })))));
 };
